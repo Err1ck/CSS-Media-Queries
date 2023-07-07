@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    font-size: small;
+    font-family: sans-serif;
+    text-align: center;
+}
+div {
+    overflow: hidden;
+}
+.cards{
+    height: 25rem;
+    width: 18.75rem;
+    margin-bottom: 1.25rem;
+    background-color: #f0f0f0;
+    border-radius: 0.625rem;
+    background-image: linear-gradient(#f0f0f0, #929292);
+}
+.cards__head{
+    display: flex;
+    gap: 3.75rem;
+}
+.profile__picture {
+    background-color: white;
+    margin: 0.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100%/3);
+}
+.ellipsis{
+    display: flex;
+}
+.ellipsis>p{
+    font-size: 1.5rem;
+}
+p {
+    padding: 0.25rem;
+}
+time{
+    color: white;
+    margin-bottom: 0.625rem;
+}  
+.cards img {
+    width: 100%;
+    height: 60%;
+}
+.cards__icons{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.cards__text{
+    margin: 0.3rem;
+    text-align: justify;
+} 
+span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+.cards{
+    justify-content: flex-start;
+}
+}
+@media screen and (max-width: 375px) {
+body {
+    justify-content: flex-start;
+}
+.cards{
+    width: 100%;
+}
+}
